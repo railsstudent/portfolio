@@ -101,12 +101,95 @@ ul.menu > li {
     grid-template-rows: repeat(5, 1fr);
   }
 
+  .joke-1,
+  .joke-2 {
+    font-size: 1.25rem;
+  }
+
   .joke-1 {
     grid-row: 1 / span 2;
   }
 
   .joke-2 {
     grid-row: 3 / span 3;
+  }
+
+  @media (max-width: 800px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: max-content auto 1fr auto auto;
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "content content"
+        "jokes jokes"
+        "footer footer";
+    }
+
+    ul.menu {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    ul.menu > li {
+      flex-basis: 20%;
+    }
+
+    .jokes {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+
+    .joke-1 {
+      grid-column: 1 / 2;
+      grid-row: 1;
+    }
+
+    .joke-2 {
+      grid-column: 2 / -1;
+      grid-row: 1;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content auto 1fr auto auto;
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "jokes"
+        "footer";
+    }
+
+    ul.menu {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    ul.menu > li {
+      flex-basis: 20%;
+    }
+
+    .jokes {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .joke-1,
+    .joke-2 {
+      font-size: 1rem;
+      grid-column: 1;
+    }
+
+    .joke-1 {
+      grid-row: 1;
+    }
+
+    .joke-2 {
+      grid-row: 2;
+    }
   }
 }
 
