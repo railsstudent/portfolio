@@ -1,58 +1,164 @@
 <html>
 	<head>
-		<title>My Portfolio</title>
+		<title>Connie's Personal Projects</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="menu-container">
+			<div class="headers">
+				<h1 class="title">My Angular Projects</h1>
+			</div>
+			<div class="nav-container">
 				<ul class="menu">
-					<li><a href="#">home</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="index.html">Angular</a></li>
+					<li><a href="vue.html">Vue</a></li>
+					<li><a href="grid.html">CSS Grids</a></li>
 				</ul>
 			</div>
-			<h1 class="title">My awesome portfolio</h1>
-			<div class="portfolio-container">
-				<div class="item">
-					<p class="name">project a</p>
-					<button>Learn More</button>
+			<div class="ui cards contents">
+				<div class="card">
+			    <div class="content">
+			      <div class="header">
+			        Reactive Todo App
+			      </div>
+			      <div class="description">
+			        Built with Angular 5 and Ngrx 5 library. UI components are styled by ngBootstrap and Bootstrap 4
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <div class="ui two buttons">
+							<button class="ui button green basic" onclick="window.open('https://github.com/railsstudent/angular-redux-todo/'
+							, '_blank')">
+								<i class="github icon circular"></i>
+								<label>Github Repo</label>
+							</button>
+							<button class="ui button red basic" onclick="window.open('https://railsstudent.github.io/angular-redux-todo/'
+							, '_blank')">
+								<label>Demo</label>
+							</button>
+			      </div>
+			    </div>
+			  </div>
+				<div class="card">
+			    <div class="content">
+			      <div class="header">
+			        Ng Dynamic Periodic Table
+			      </div>
+			      <div class="description">
+			        Use Angular 5 to build a clone of <a href="https://www.ptable.com/" target="_blank">https://www.ptable.com/</a>.
+							When an element is hovered, its detailed information, element type, row number and column number are displayed.
+							When solid is hovered, all elements that are solid are highlighted whereas the others are dimmed. The same effect
+							is applied when hovering, gas, liquid and unknown state.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <div class="ui two buttons">
+							<button class="ui button green basic" onclick="window.open('https://github.com/railsstudent/ng-periodic-table/'
+							, '_blank')">
+								<i class="github icon circular"></i>
+								<label>Github Repo</label>
+							</button>
+							<button class="ui button red basic" onclick="window.open('https://railsstudent.github.io/ng-periodic-table/'
+							, '_blank')">
+								<label>Demo</label>
+							</button>
+			      </div>
+			    </div>
+			  </div>
+				<div class="card">
+			    <div class="content">
+			      <div class="header">
+			        Ng Pomodoro Timer
+			      </div>
+			      <div class="description">
+			        Use Angular 5 to build a 25-minute Pomodoro Timer. Scotch.io weekly coding challenge number 6.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <div class="ui two buttons">
+							<button class="ui button green basic" onclick="window.open('https://github.com/railsstudent/ng-pomodoro-timer/'
+							, '_blank')">
+								<i class="github icon circular"></i>
+								<label>Github Repo</label>
+							</button>
+							<button class="ui button red basic" onclick="window.open('https://railsstudent.github.io/ng-pomodoro-timer/'
+							, '_blank')">
+								<label>Demo</label>
+							</button>
+			      </div>
+			    </div>
+			  </div>
+				<div class="card">
+			    <div class="content">
+			      <div class="header">
+			        Ng Movie Player
+			      </div>
+			      <div class="description">
+			        Use Angular 5 to build movie player that plays specific youtube videos on an IFrame.
+							The app makes an API call to obtain a movie list and renders thumbnails to represent them.
+							Scotch.io weekly coding challenge number 5.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <div class="ui two buttons">
+							<button class="ui button green basic" onclick="window.open('https://github.com/railsstudent/ng-movie-player/'
+							, '_blank')">
+								<i class="github icon circular"></i>
+								<label>Github Repo</label>
+							</button>
+							<button class="ui button red basic" onclick="window.open('https://railsstudent.github.io/ng-movie-player/'
+							, '_blank')">
+								<label>Demo</label>
+							</button>
+			      </div>
+			    </div>
+			  </div>
+				<div class="card">
+			    <div class="content">
+			      <div class="header">
+			        Angular 30
+			      </div>
+			      <div class="description">
+			        This is the angular version of Wes Bos's JavaScript 30 project (<a href="https://javascript30.com/" target="_blank">JavaScript 30</a>).
+							In 30 days, I used Angular 4 and some Web APIS to recreate the 28 out of 30 exercises.
+							JavaScript30 is a must-do project for beginners to pick up JavaScript in an interesting way.
+							You can run the exercises locally or deploy them to third-party hosting site such as Firebase.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <div class="ui one buttons">
+							<button class="ui button green basic" onclick="window.open('https://github.com/railsstudent/angular-30/'
+							, '_blank')">
+								<i class="github icon circular"></i>
+								<label>Github Repo</label>
+							</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="jokes">
+				<div class="joke-1">
+					<p>
+					Programmer (noun.)
+					</p>
+					<p>
+						A person who fixed a problem that you don't know you have, in a way you don't understand.
+					</p>
 				</div>
-				<div class="item featured">
-					<p class="name">project b</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item featured">
-					<p class="name">project c</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project d</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project e</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project f</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project g</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project h</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project i</p>
-					<button>Learn More</button>
-				</div>
-				<div class="item">
-					<p class="name">project j</p>
-					<button>Learn More</button>
+				<div class="joke-2">
+					<p>
+						The programmer's wife sent him to the grocery store.
+					</p>
+					<p>
+						Her instructions were:
+					</p>
+					<p>
+						"Buy butter. See if they have eggs. If they do, buy 10"<br/ >
+					</p>
+					<p>
+						So he bought 10.
+					</p>
 				</div>
 			</div>
 			<div class="footer">
