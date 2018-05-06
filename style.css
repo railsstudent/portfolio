@@ -73,6 +73,10 @@ ul.menu > li {
   justify-content: center;
 }
 
+.ui.one {
+  width: 100%;
+}
+
 @supports (display: grid) {
   .wrapper {
     display: grid;
@@ -109,6 +113,7 @@ ul.menu > li {
 
   /* override css of semantic ui*/
   .ui.cards.contents > .card {
+    width: 90%;
     align-self: stretch;
     justify-self: center;
   }
@@ -128,7 +133,7 @@ ul.menu > li {
     grid-row: 3 / span 3;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     .wrapper {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: max-content auto 1fr auto auto;
@@ -187,6 +192,10 @@ ul.menu > li {
 
     .nav-container {
       line-height: 0.5;
+    }
+
+    .ui.cards.contents > .card {
+      width: 90%;
     }
 
     ul.menu {
