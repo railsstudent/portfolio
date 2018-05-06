@@ -77,7 +77,7 @@ ul.menu > li {
   width: 100%;
 }
 
-@supports (display: grid) {
+@supports (display: grid1) {
   .wrapper {
     display: grid;
     grid-template-columns: fit-content(200px) 4fr 1fr;
