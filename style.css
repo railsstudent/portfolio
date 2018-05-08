@@ -48,7 +48,8 @@ ul.menu > li {
 }
 
 .joke-1,
-.joke-2 {
+.joke-2,
+.joke-3 {
   font-size: 1.25rem;
   border: 2px solid rebeccapurple;
   padding: 10px;
@@ -122,15 +123,19 @@ ul.menu > li {
     grid-area: jokes;
 
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr [row4-start] 1fr [row5-start] 1fr [row5-end];
   }
 
   .joke-1 {
-    grid-row: 1 / span 2;
+    grid-row: [row1-start] / span 2;
   }
 
   .joke-2 {
-    grid-row: 3 / span 3;
+    grid-row: [row3-start] / span 3;
+  }
+
+  .joke-3 {
+    grid-row: [row3-start] / span 2;
   }
 
   @media (max-width: 850px) {
@@ -164,7 +169,8 @@ ul.menu > li {
     }
 
     .joke-1,
-    .joke-2 {
+    .joke-2,
+    .joke-3 {
       font-size: 1.1rem;
       grid-row: 1;
     }
@@ -173,7 +179,8 @@ ul.menu > li {
       grid-column: 1 / 2;
     }
 
-    .joke-2 {
+    .joke-2,
+    .joke-3 {
       grid-column: 2 / -1;
     }
   }
@@ -213,7 +220,8 @@ ul.menu > li {
     }
 
     .joke-1,
-    .joke-2 {
+    .joke-2,
+    .joke-3 {
       font-size: 1rem;
       grid-column: 1;
     }
@@ -222,7 +230,8 @@ ul.menu > li {
       grid-row: 1;
     }
 
-    .joke-2 {
+    .joke-2,
+    .joke-3 {
       grid-row: 2;
     }
   }
