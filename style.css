@@ -114,6 +114,7 @@ ul.menu > li {
   /* override css of semantic ui*/
   .ui.cards.contents > .card {
     width: 90%;
+    margin-top: 1.875em;
     align-self: stretch;
     justify-self: center;
   }
