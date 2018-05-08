@@ -13,7 +13,6 @@
 .wrapper {
   width: 100%;
   min-height: 100vh;
-  overflow: auto;
 }
 
 .headers h1.title {
@@ -127,15 +126,15 @@ ul.menu > li {
   }
 
   .joke-1 {
-    grid-row: [row1-start] / span 2;
+    grid-row: row1-start / span 2;
   }
 
   .joke-2 {
-    grid-row: [row3-start] / span 3;
+    grid-row: row3-start / span 3;
   }
 
   .joke-3 {
-    grid-row: [row3-start] / span 2;
+    grid-row: row3-start / span 2;
   }
 
   @media (max-width: 850px) {
