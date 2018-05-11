@@ -1,9 +1,7 @@
 :root {
-  --button-color: #3498db;
-  --project-color: tomato;
   --header-color: tomato;
-  --project-background: cornsilk;
   --sidebar-background: bisque;
+  --box-shadow-color: #d4d4d5;
 }
 
 * {
@@ -75,6 +73,15 @@ ul.menu > li {
 
 .ui.one {
   width: 100%;
+}
+
+.ui.cards > .card {
+  /* box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; */
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px var(--box-shadow-color);
+}
+
+.ui.cards > .card.featured {
+  --box-shadow-color: red;
 }
 
 @supports (display: grid) {
